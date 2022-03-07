@@ -1,0 +1,68 @@
+@import './vendors/primitive.css';
+
+.company-search {
+  position: relative;
+}
+
+.company-search ul {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  transition-property: opacity, transform;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+
+.company-search button {
+  display: block;
+  margin: 0;
+  padding: 0.4rem 0.75rem;
+  width: 100%;
+  color: #404040;
+  font-weight: normal;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+}
+
+.company-search button:hover,
+.company-search button:focus {
+  background-color: #dedede;
+}
+
+.company-search button span {
+  display: block;
+  margin-top: 0.4rem;
+  opacity: 0.4;
+}
+
+.company-search mark {
+  padding: 0;
+  color: #0366ee;
+  background-color: transparent;
+}
+
+.result-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.result-enter-active {
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+.result-enter-done {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.result-exit {
+  opacity: 0;
+  transform: translateY(10px);
+}
